@@ -1,0 +1,30 @@
+/* Layout css */
+/*HEADER*/
+.menu {
+    background: #069847!important;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color: white!important;
+}
+/*footer*/
+footer{
+    padding: 30px;
+    background: #0b8441;
+    color: white;
+}
+.email-request{
+    padding: 10px;
+}
+.bottom-nav{}
+.bottom-nav ul li{
+    list-style: none;
+}
+.bottom-nav ul li a{
+    color: white;
+}
+.copyright{
+    text-align:right;
+}
