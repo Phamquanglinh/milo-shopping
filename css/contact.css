@@ -6,13 +6,20 @@
     margin-top: 15px;
 
 }
+.content-feedback{
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #0A9A07;
+    margin-top: 15px;
+}
 .text{
     position: absolute;
     color: white;
     margin-top: 20px;
     margin-left: 30px;
 }
-.text h3 {
+.text-content {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -24,7 +31,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 42px;
 }
 .form_feedback{
@@ -32,27 +39,29 @@
     color: white;
     margin-top: 20px;
     margin-left: 30px;
+}
+#fax{
+    width: 544px;
+    height: 74px;
+}
+.form-input{
+    margin-left: 30%;
+}
+.input-box{
+    width: 300px;
+    border-radius: 5px;
 
 }
-.form_feedback h3{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    color: #FFFFFF;
+#feedback{
+    width: 600px;
+    padding-bottom: 100px;
+    border-radius: 5px;
 }
-.form-inline{
-    margin-left: 30px;
-}
-.form_feedback p{
-    font-family: Roboto;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 42px;
-    color: #FFFFFF;
-    width: 1000px;
-    height: 500px;
-    border: 1px solid black;
+#btn-submit{
+    width: 100px;
+    height: 50px;
+    background: #D1BF1F;
+    border-radius: 12px;
+    margin-left: 40%;
+    margin-top: 2%;
 }
