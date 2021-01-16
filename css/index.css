@@ -1,3 +1,4 @@
+
 .recommand{
     padding: 10px;
     background: #d7fad8;
@@ -10,3 +11,21 @@
     padding: 20px;
     background: radial-gradient(#50e356, transparent);
 }
+
+/*Sale*/
+.col-md-4{
+  align-content: center;
+    width: 30%;
+}
+.sale_product{
+ width:100%;
+}
+.products{
+
+}
+.sale-product {
+    padding: 19px;
+    margin: 0;
+}
+/*Hot*/
+>>>>>>> sale
