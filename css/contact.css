@@ -1,58 +1,31 @@
 .content{
-    height: 362px;
     width: 100%;
     border-radius: 12px;
     background-color: #0A9A07;
-    margin-top: 15px;
-
 }
 .content-feedback{
-    height: 500px;
-    width: 100%;
     border-radius: 12px;
     background-color: #0A9A07;
     margin-top: 15px;
 }
 .text{
-    position: absolute;
     color: white;
     margin-top: 20px;
     margin-left: 30px;
 }
 .text-content {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
     color: #FFFFFF;
 }
 .text p{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 42px;
 }
 .form_feedback{
-    width: 100%;
-    position: absolute;
     color: white;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-#fax{
-    width: 544px;
-    height: 74px;
-}
-.form-input{
-    width: 100%;
-    margin-left: 4%;
-    margin-top: 2%;
-}
-.input-box{
-    width: 30%;
-    border-radius: 5px;
+    padding: 30px;
 }
 #feedback{
     width: 61%;
@@ -67,11 +40,24 @@
     margin-top: 20px;
     margin-left: 27%;
 }
-.form_feedback p{
-    font-family: Roboto;
+.form_feedback p {
     font-style: italic;
     font-size: 24px;
 }
-#space{
-    margin-left: 10px;
+.contact-info{
+    padding: 35px;
+    color: white;
+}
+.form-control{
+    padding: 40px;
+    background-color: #0a9a07;
+    border:none;
+}
+
+.form-control input{
+    padding: 9px 7px 9px 7px;
+    border-radius: 9px;
+    border: none;
+    margin: 6px;
+    width:100%;
 }
