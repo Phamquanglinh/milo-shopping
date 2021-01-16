@@ -35,6 +35,7 @@
     line-height: 42px;
 }
 .form_feedback{
+    width: 100%;
     position: absolute;
     color: white;
     margin-top: 20px;
@@ -45,15 +46,16 @@
     height: 74px;
 }
 .form-input{
-    margin-left: 30%;
+    width: 100%;
+    margin-left: 4%;
+    margin-top: 2%;
 }
 .input-box{
-    width: 300px;
+    width: 30%;
     border-radius: 5px;
-
 }
 #feedback{
-    width: 600px;
+    width: 61%;
     padding-bottom: 100px;
     border-radius: 5px;
 }
@@ -62,6 +64,14 @@
     height: 50px;
     background: #D1BF1F;
     border-radius: 12px;
-    margin-left: 40%;
-    margin-top: 2%;
+    margin-top: 20px;
+    margin-left: 27%;
+}
+.form_feedback p{
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 24px;
+}
+#space{
+    margin-left: 10px;
 }
