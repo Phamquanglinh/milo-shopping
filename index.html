@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/poper.js"></script>
@@ -11,11 +12,11 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
                 <!--logo-->
-                <a class="navbar-brand col-lg-7 col-1" href="#">
+                <a class="navbar-brand col-lg-8 col-1" href="#">
                     <img src="images/logo.png" width="30" height="30" alt="logo">
                 </a>
                 <!--menu-->
@@ -23,7 +24,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--reponsive-->
-                <div class="collapse navbar-collapse col-lg-5 col-11" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse col-lg-4 col-11" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
@@ -41,7 +42,50 @@
                 </div>
             </nav>
         </header>
-        <div class="recomand"></div>
+        <div class="recommand">
+            <div class="row">
+                <div class="re-option col-2">
+                    <div class="re-icon">
+                        <img src="images/index/voucher.png" width="100%">
+                    </div>
+                    <div class="re-heading">
+                        Khuyến mãi
+                    </div>
+                </div>
+                <div class="re-option col-2">
+                    <div class="re-icon">
+                        <img src="images/index/product.png" width="100%">
+                    </div>
+                    <div class="re-heading">
+                        Sản phẩm sữa
+                    </div>
+                </div>
+                <div class="re-option col-2">
+                    <div class="re-icon">
+                        <img src="images/index/delivery.png" width="100%">
+                    </div>
+                    <div class="re-heading">
+                        Giao hàng
+                    </div>
+                </div>
+                <div class="re-option col-2">
+                    <div class="re-icon">
+                        <img src="images/index/charity.png" width="100%">
+                    </div>
+                    <div class="re-heading">
+                        Quỹ Milo
+                    </div>
+                </div>
+                <div class="re-option col-2">
+                    <div class="re-icon">
+                        <img src="images/index/account.png" width="100%">
+                    </div>
+                    <div class="re-heading">
+                        Tài khoản
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="sale-product">
             <!--Kiquy-->
         </div>
@@ -60,7 +104,7 @@
                 </div>
              <!-- right-->
                 <div class="col-md-6 col-12 bottom-nav row">
-                    <div class="col-6 bottom-left-nav">
+                    <div class="col-sm-6 bottom-left-nav">
                         <ul>
                             <li><a href="index.html">Trang chủ</a></li>
                             <li><a href="#">Sản phẩm bán chạy</a></li>
@@ -68,7 +112,7 @@
                             <li><a href="#">Quỹ từ thiện</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 bottom-right-nav">
+                    <div class="col-sm-6 bottom-right-nav">
                         <ul>
                             <li><a href="about.html">Về chúng tôi</a></li>
                             <li><a href="contact.html">Liên hệ</a></li>
