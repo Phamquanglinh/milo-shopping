@@ -1,12 +1,13 @@
 .content{
     width: 100%;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     background-color: #0A9A07;
 }
 .content-feedback{
-    border-radius: 12px;
+    /* border-radius: 12px; */
     background-color: #0A9A07;
-    margin-top: 15px;
+    margin: 15px 0;
+    width: 100%;
 }
 .text{
     color: white;
@@ -47,6 +48,7 @@
 .contact-info{
     padding: 35px;
     color: white;
+    margin: 15px;
 }
 .form-control{
     padding: 40px;
