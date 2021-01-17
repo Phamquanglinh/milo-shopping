@@ -1,10 +1,8 @@
 .content{
     width: 100%;
-    /* border-radius: 12px; */
     background-color: #0A9A07;
 }
 .content-feedback{
-    /* border-radius: 12px; */
     background-color: #0A9A07;
     margin: 15px 0;
     width: 100%;
@@ -51,11 +49,9 @@
     margin: 15px;
 }
 .form-control{
-    padding: 40px;
     background-color: #0a9a07;
     border:none;
 }
-
 .form-control input{
     padding: 9px 7px 9px 7px;
     border-radius: 9px;
