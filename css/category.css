@@ -1,3 +1,45 @@
+
+.col-md-3{
+    align-content: center;
+    width: 30%;
+    height: 100%;
+}
+.sale_product{
+    width:100%;
+}
 .products{
     display: none;
+}
+.sale-product {
+    padding: 19px;
+    margin: 0;
+    background-color: green;
+
+}
+#caption{
+    font-size: 200%;
+    text-align: center;
+    color: aliceblue;
+    border-text: bold;
+}
+.images{
+    background-color: white;
+    padding: 5%;
+    align-content: center;
+    margin: 5%;
+    border-radius: 20px;
+}
+.product-name{
+    text-align: center;
+    font-size: 200%;
+    border-text: bold;
+}
+.new-price{
+    text-align: center;
+    color: #d60606;
+    font-size: 150%;
+}
+.old-price{
+    text-align: center;
+    text-decoration: line-through;
 }
