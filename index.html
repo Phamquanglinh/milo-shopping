@@ -8,6 +8,7 @@
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/poper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -126,6 +127,49 @@
         <div class="sale-product">
             <!--K-->
         </div>
+        <div class="review">
+            <div id="show-on-scroll"></div>
+            <div class="row review-area" >
+                <div class="avatar col-md-4 col-12">
+                    <img src="images/index/reviewer-1.png" width="50%" alt="avatar-reviewer">
+                </div>
+                <div class="review-content col-md-8 col-12 radius-left">
+                    <p>
+                        Sữa rất ngon nhưng không có vị người yêu cũ nên tôi đánh giá không cao
+                    </p>
+                </div>
+            </div>
+            <div class="row review-area">
+                <div class="avatar col-md-4 col-12 order-2">
+                    <img src="images/index/reviewer-2.png" width="50%" alt="avatar-reviewer">
+                </div>
+                <div class="review-content col-md-8 col-12 radius-right">
+                    <p>
+                        Sữa ok đấy nhưng tôi không hiểu vì sao nó lại bắt lửa ??
+                    </p>
+                </div>
+            </div>
+            <div class="row review-area">
+                <div class="avatar col-md-4 col-12">
+                    <img src="images/index/reviewer-3.png" width="50%" alt="avatar-reviewer">
+                </div>
+                <div class="review-content col-md-8 col-12 radius-left">
+                    <p>
+                        Sau khi uống sữa tôi thấy hình ảnh thầy Huấn trong đầu tôi với câu "cần lao vi tiên thủ"
+                    </p>
+                </div>
+            </div>
+            <div class="row review-area" >
+                <div class="avatar col-md-4 col-12 order-2">
+                    <img src="images/index/reviewer-4.png" width="50%" alt="avatar-reviewer">
+                </div>
+                <div class="review-content col-md-8 col-12 radius-right">
+                    <p>
+                        Tôi thấy mọi người review nhiều quá nên tôi review theo thôi , đấy review của tôi đấy !
+                    </p>
+                </div>
+            </div>
+        </div>
         <footer>
             <div class="row">
             <!-- left-->
@@ -169,4 +213,11 @@
         </footer>
     </div>
 </body>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.recommand',{ delay: 300 });
+    sr.reveal('.sale-product',{ delay:300 });
+    sr.reveal('.review-area',{ delay: 500 },{rotate: {x: 20, y: 20}});
+    sr.reveal('footer',{ delay: 500 });
+</script>
 </html>
