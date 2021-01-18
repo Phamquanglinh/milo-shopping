@@ -1,6 +1,7 @@
 .recommand{
     background: #d7fad8;
     font-size: 100%;
+    margin: auto;
 }
 .re-option{
     margin: auto;
@@ -70,20 +71,22 @@
 }
 .hot-product {
     background: #0C760A;
+    padding-bottom: 25px;
 }
 .hot-field{
-    margin: 10px;
+    margin: 11px!important;
     background: white;
-    padding: 15px;
+    padding: 17px!important;
     align-items: center;
-    border-radius: 12px;}
+    border-radius: 12px;
+}
 /*Review*/
 @keyframes fade-in {
     0% {opacity: 0}
     100% {opacity: 1}
 }
 .review{
-    max-width: 1280px;
+    max-width: 1281px;
     margin: auto;
     padding: 27px;
 }
@@ -119,4 +122,8 @@
 }
 header{
     animation: fade-in 0.5s;
+}
+.row{
+    margin: 0;
+    padding: 0;
 }
