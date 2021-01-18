@@ -9,6 +9,9 @@
 .nav-link{
     color: white!important;
 }
+.box-shadow{
+    box-shadow: 1px 1px 19px #0e0e0ed1;
+}
 /*footer*/
 footer{
     padding: 30px;
