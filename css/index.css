@@ -29,7 +29,7 @@
     font-size: 200%;
     text-align: center;
     color: aliceblue;
-    border-text: bold;
+    font-weight: bold;
 }
 .images{
     background-color: white;
@@ -40,7 +40,7 @@
 .product-name{
     text-align: center;
     font-size: 200%;
-    border-text: bold;
+    font-weight: bold;
 }
 .new-price{
     text-align: center;
