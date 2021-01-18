@@ -1,0 +1,46 @@
+.recommand{
+    padding: 10px;
+    background: #d7fad8;
+    font-size: 100%;
+}
+.re-option{
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    background: radial-gradient(#50e356, transparent);
+}
+#search-icon{
+   width: 110%;
+    height: auto;
+}
+#search{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0A9A07;
+}
+#search-cart{
+    width: 80%;
+    margin-left: 1%;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.col-md-12{
+    background-color: #0b2e13;
+    width: 100%;
+    margin-top: 10px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#result1{
+    color: white;
+}
+.product{
+    width: 50%;
+
+}
