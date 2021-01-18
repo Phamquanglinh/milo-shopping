@@ -9,7 +9,6 @@
     padding: 20px;
     background: radial-gradient(#50e356, transparent);
 }
-
 /*Sale*/
 .col-md-4{
     align-content: center;
@@ -53,7 +52,31 @@
     text-decoration: line-through;
 }
 /*Hot*/
-
+.product-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.price{
+    color: red;
+    font-weight: bold;
+}
+.count-search{
+    color: dimgrey;
+}
+.hot-image{}
+.hot-content{
+    padding: 10px;
+    text-align: center;
+}
+.hot-product {
+    background: #0C760A;
+}
+.hot-field{
+    margin: 10px;
+    background: white;
+    padding: 15px;
+    align-items: center;
+    border-radius: 12px;}
 /*Review*/
 @keyframes fade-in {
     0% {opacity: 0}
