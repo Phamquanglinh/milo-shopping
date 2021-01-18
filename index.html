@@ -15,10 +15,11 @@
 <body>
 <div class="container-fluid">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu fixed-top">
             <!--logo-->
-            <a class="navbar-brand col-lg-8 col-1" href="#">
+            <a class="navbar-brand navbar-light col-lg-8 col-1" href="#">
                 <img src="images/logo.png" width="30" height="30" alt="logo">
+                <span class="text-white">MILO</span>
             </a>
             <!--menu-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -29,10 +30,17 @@
             <div class="collapse navbar-collapse col-lg-4 col-11" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sản phẩm</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html#new">Sản phẩm mới</a>
+                            <a class="dropdown-item" href="category.html#sale">Sản phẩm đang giảm giá</a>
+                            <a class="dropdown-item" href="category.html#hot">Sản phẩm bán chạy</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Thông tin</a>
@@ -133,7 +141,7 @@
         </div>
     </div>
     <div class="sale-product">
-        <p id="Product-content"><b>Chương trình giảm giá đặc biệt</b></p>
+        <p class="heading"><b>Chương trình giảm giá đặc biệt</b></p>
         <div class="row">
             <div class="products col-md-4 col-12">
                 <div class="images">
@@ -162,6 +170,7 @@
         </div>
     </div>
     <div class="hot-product">
+        <p class="heading"><b>Sản phẩm nổi bật</b></p>
         <div class="d-flex">
             <div class="col-md-6 col-12 hot-area">
                 <div class="row hot-field">
@@ -297,7 +306,8 @@
     window.sr = ScrollReveal();
     sr.reveal('.recommand',{ delay: 300 });
     sr.reveal('.sale-product',{ delay:300 });
+    sr.reveal('.hot-product',{ delay:300 });
     sr.reveal('.review-area',{ delay: 500 },{rotate: {x: 20, y: 20}});
-    sr.reveal('footer',{ delay: 500 });
+    sr.reveal('footer',{ delay: 300 });
 </script>
 </html>
