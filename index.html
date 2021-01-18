@@ -11,11 +11,12 @@
     <script src="bootstrap/js/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/layout.js"></script>
 </head>
 <body>
 <div class="container-fluid">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light menu fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu box-shadow">
             <!--logo-->
             <a class="navbar-brand navbar-light col-lg-8 col-1" href="#">
                 <img src="images/logo.png" width="30" height="30" alt="logo">
@@ -43,10 +44,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Thông tin</a>
+                        <a class="nav-link" href="about.html">Thông tin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Liên Hệ</a>
+                        <a class="nav-link" href="contact.html">Liên Hệ</a>
                     </li>
                 </ul>
             </div>
@@ -274,8 +275,8 @@
                 <div class="col-sm-6 bottom-left-nav">
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="#">Sản phẩm bán chạy</a></li>
-                        <li><a href="#">Sản phẩm đang hot</a></li>
+                        <li><a href="category.html#sale">Sản phẩm bán chạy</a></li>
+                        <li><a href="category.html#hot">Sản phẩm đang hot</a></li>
                         <li><a href="#">Quỹ từ thiện</a></li>
                     </ul>
                 </div>
@@ -305,6 +306,7 @@
 <script>
     window.sr = ScrollReveal();
     sr.reveal('.recommand',{ delay: 300 });
+    sr.reveal('.banner',{ delay: 300 });
     sr.reveal('.sale-product',{ delay:300 });
     sr.reveal('.hot-product',{ delay:300 });
     sr.reveal('.review-area',{ delay: 500 },{rotate: {x: 20, y: 20}});
