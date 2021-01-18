@@ -1,0 +1,26 @@
+h3 {
+    text-decoration-line: line-through;
+}
+
+.main {
+    margin-top: 5%;
+}
+.col-left {
+    background-color: #E5E5E5;
+}
+.extra {
+
+    margin-right: 40%;
+    margin-bottom: 5px;
+}
+.buttons-added {
+    margin-top: 40%;
+}
+#submit-button-left {
+    margin-left: 15%;
+    margin-bottom: 5px;
+}
+
+
+
+

@@ -42,7 +42,45 @@
             </div>
         </nav>
     </header>
-    <!--Phần detail johnny lo -->
+    <div class="container-fluid">
+            <div class="row main">
+                 <div class="col-sm-4" id="col-right"><img src="images/detail/miloitduong.png"></div>
+                 <div class="col-sm-8 " id="col-left">
+                     <h1>Sữa hộp MiLo lúa mạch ít đường</h1>
+                        <div class="row extra">
+                           <div class="col-md-6">
+                                <h2 class="text-danger">12.999 đ</h2>
+                                <h3 class="text-secondary">15.000 đ</h3>
+                                <p>Mã sản phẩm: MID-H</p>
+                                <p>Số lượng thùng trong kho: 1000</p>
+                                <p>Loại sản phẩm: Sữa hộp giấy</p>
+                                <button id="submit-button-left" class="btn btn-success btn-lg">Mua ngay</button>
+                           </div>
+                            <div class="col-md-6">
+                                <div class="buttons-added">
+                                    <h4>Số lượng</h4>
+                                    <form>
+                                        <input type="text" id="number" value="0"/>
+                                        <input type="button" onclick="incrementValue()" value="Ấn để thêm" />
+                                    </form>
+                                    <button id="submit-button-right" class="btn btn-grey btn-lg">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+
+                 </div>
+             </div>
+         </div>
+    </div>
+    <script>
+        function incrementValue()
+        {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+    </script>
     <footer>
         <div class="row">
             <!-- left-->
@@ -85,5 +123,6 @@
         </div>
     </footer>
 </div>
+
 </body>
 </html>
