@@ -6,12 +6,14 @@ h3 {
     margin-top: 5%;
 }
 .col-left {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 }
 .extra {
 
-    margin-right: 40%;
-    margin-bottom: 5px;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    background-color: #69D067;
+;
 }
 .buttons-added {
     margin-top: 40%;
@@ -19,6 +21,13 @@ h3 {
 #submit-button-left {
     margin-left: 15%;
     margin-bottom: 5px;
+}
+.text-detail {
+    background: #69D067;
+    margin: 1% 3% 1% 3%;
+}
+#icon {
+    text-align: center;
 }
 
 
