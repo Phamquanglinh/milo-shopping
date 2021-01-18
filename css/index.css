@@ -13,21 +13,21 @@
 
 /*Sale*/
 .col-md-4{
-  align-content: center;
+    align-content: center;
     width: 30%;
 }
 .sale_product{
- width:100%;
+    width:100%;
 }
 .products{
-
+    margin-bottom: 5px;
 }
 .sale-product {
     padding: 19px;
     margin: 0;
     background-color: green;
 }
-#Product-content{
+#product-content{
     font-size: 200%;
     text-align: center;
     color: aliceblue;
@@ -36,8 +36,7 @@
 .images{
     background-color: white;
     padding: 5%;
-    align-content: center;
-    margin: 5%;
+    text-align: center;
     border-radius: 20px;
 }
 .product-name{
