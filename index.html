@@ -81,7 +81,7 @@
         </div>
     </div>
     <div class="recommand">
-        <div class="d-flex">
+        <div class="row">
             <div class="re-option col-md-2 col-4">
                 <div class="re-icon">
                     <img src="images/index/voucher.png" width="100%" alt="voucher">
@@ -133,7 +133,7 @@
         </div>
     </div>
     <div class="sale-product">
-        <p id="Product-content"><b>Chương trình giảm giá đặc biệt</b></p>
+        <p id="product-content"><b>Chương trình giảm giá đặc biệt</b></p>
         <div class="row">
             <div class="products col-md-4 col-12">
                 <div class="images">
@@ -162,7 +162,8 @@
         </div>
     </div>
     <div class="hot-product">
-        <div class="d-flex">
+        <p id="product-content"><b>Sản phẩm nổi bật</b></p>
+        <div class="row">
             <div class="col-md-6 col-12 hot-area">
                 <div class="row hot-field">
                     <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1">
@@ -184,7 +185,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex">
+        <div class="row">
             <div class="col-md-6 col-12 hot-area">
                 <div class="row hot-field">
                     <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-3">
@@ -297,7 +298,9 @@
     window.sr = ScrollReveal();
     sr.reveal('.recommand',{ delay: 300 });
     sr.reveal('.sale-product',{ delay:300 });
+    sr.reveal('.hot-product',{ delay:300 });
     sr.reveal('.review-area',{ delay: 500 },{rotate: {x: 20, y: 20}});
     sr.reveal('footer',{ delay: 500 });
+
 </script>
 </html>
