@@ -9,6 +9,9 @@
     padding: 20px;
     background: radial-gradient(#50e356, transparent);
 }
+.row{
+    margin: 0!important;
+}
 /*Sale*/
 .col-md-4{
     align-content: center;
