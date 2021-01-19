@@ -44,3 +44,35 @@
     text-decoration: line-through;
 }
 /*=================================*/
+.product-name{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+.price{
+    color: red;
+    font-weight: bold;
+    font-size: 36px;
+}
+.count-search{
+    color: dimgrey;
+    font-size: 25px;
+}
+.hot-image{
+
+
+}
+.hot-content{
+    padding: 10px;
+    text-align: left;
+}
+.hot-product {
+    background: #0C760A;
+}
+.hot-field{
+    margin: 10px;
+    background: white;
+    padding: 30px;
+    align-items: center;
+    border-radius: 12px;}
+
