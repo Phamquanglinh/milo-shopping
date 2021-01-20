@@ -1,11 +1,11 @@
 .container-fluid{
     padding: 10px;
     margin: 0;
-    background: #18c518;
+    /* background: #18c518; */
 }
 .login{
     /* position: absolute; */
-    background-color: rgba(46, 231, 42, 0.65);
+    /* background-color: rgba(46, 231, 42, 0.65); */
     width: 100%;
     padding: 24px;
 }

@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Đăng ký</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/poper.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/signup.css">
-</head>
-<body>
-<div class="container-fluid">
-    <div class=" col-12 col-md-12 sign-up">
-        <div class="col-9 title bg-success">Đăng ký</div>
-        <div class="background-form-sign-up">
-            <div class="form-sign-up">
-                <form action="#"method="post">
-                    <div class="row">
-                        <div class="col-md-6 col-12" >
-                            <input type="text"  name="Surname" class="style-input " placeholder="Họ và tên đệm" required >
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <input type="text" name="Name" class="style-input  " placeholder="Tên" required>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <input type="email" name="Email" class="style-input " placeholder="Email của bạn" required>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <input type="number" name="Phone" class="style-input" placeholder="Số điện thoại" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class=" col-md-12 col-12 ">
-                            <label>Bạn là:</label>
-                            <input type="radio" id="male" name="gender" value="male">
-                            <label for="male">Nam</label>
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label for="male">Nữ</label>
-                            <input type="radio" id="other" name="gender" value="other">
-                            <label for="other">khác</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-12" >
-                            <input type="password" class="style-input col-md-12  col-12  pt-3  pb-3 " placeholder="Nhập mật khẩu" name="Password" required>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Đăng ký</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/poper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/signup.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="col-12 col-md-12 sign-up">
+                <div class="col-9 title bg-success">Đăng ký</div>
+                <div class="background-form-sign-up">
+                    <div class="form-sign-up">
+                        <form action="#" method="post">
+                            <div class="row pt-3">
+                                <div class="col-md-6 col-12">
+                                    <input type="text" name="Surname" class="style-input" placeholder="Họ và tên đệm" required />
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="text" name="Name" class="style-input" placeholder="Tên" required />
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="email" name="Email" class="style-input" placeholder="Email của bạn" required />
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="number" name="Phone" class="style-input" placeholder="Số điện thoại" required />
+                                </div>
                             </div>
-                        <div class="col-md-12 col-12" >
-                            <input type="password" class="style-input col-md-12  col-12  pt-3  pb-3  " placeholder="Nhập lại mật khẩu" name="Password" required>
-                        </div>
-                        <div class="col-md-12 col-12" >
-                            <input type="datetime-local" class="style-input" name="Birthday"  placeholder="Ngày tháng năm sinh" required>
-                        </div>
-                        <div class="col-md-12 col-12">
-                            <input type="text" class=" pt-5 pb-5  style-input"  name="Address" placeholder="Địa chỉ của bạn" required>
-                        </div>
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <label>Bạn là:</label>
+                                    <input type="radio" id="male" name="gender" value="male" />
+                                    <label for="male">Nam</label>
+                                    <input type="radio" id="female" name="gender" value="female" />
+                                    <label for="male">Nữ</label>
+                                    <input type="radio" id="other" name="gender" value="other" />
+                                    <label for="other">khác</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <input type="password" class="style-input col-md-12 col-12 pt-3 pb-3" placeholder="Nhập mật khẩu" name="Password" required />
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <input type="password" class="style-input col-md-12 col-12 pt-3 pb-3" placeholder="Nhập lại mật khẩu" name="Password" required />
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <input type="datetime-local" class="style-input" name="Birthday" placeholder="Ngày tháng năm sinh" required />
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <input type="text" class="pt-5 pb-5 style-input" name="Address" placeholder="Địa chỉ của bạn" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7 col-12">
+                                    <label class="ml-3 mt-3 mb-3">Tôi đồng ý điều khoản sử dụng</label>
+                                    <input type="checkbox" required name="Agree" />
+                                </div>
+                                <div class="col-md-5 col-12">
+                                    <label class="mt-3 ml-5 mb-3"><a href="login.html">Bạn đã có tài khoản ? </a></label>
+                                    <div class="col-md-5 col-12 ml-5"></div>
+                                </div>
+                                <input class="btn btn-success btn-signup" type="submit" value="Đăng ký" />
+                            </div>
+                        </form>
                     </div>
-                    <div class="row">
-                        <div class="col-md-7 col-12">
-                            <label class="ml-3 mt-3 mb-3">Tôi đồng ý điều khoản sử dụng</label>
-                            <input type="checkbox" required name="Agree">
-                        </div>
-                        <div class="col-md-5 col-12">
-                            <label class="mt-3 ml-5 mb-3"><a href="login.html"  >Bạn đã có tài khoản ? </a></label>
-                            <div class="col-md-5 col-12 ml-5"></div>
-                        </div>
-                        <input class="btn btn-success btn-signup " type="submit" value="Đăng ký">
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-</body>
+    </body>
 </html>

@@ -6,4 +6,4 @@ p.media {
     font-weight: bolder;
 }
 .icon {margin: 12px;padding: 30px;}
-.icon img{width: 100%}
+.icon img{max-width: 100%;}
