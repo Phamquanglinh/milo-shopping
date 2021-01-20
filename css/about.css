@@ -1,0 +1,9 @@
+.main-text {
+    padding: 40px;
+}
+p.media {
+    font-size: medium;
+    font-weight: bolder;
+}
+.icon {margin: 12px;padding: 30px;}
+.icon img{width: 100%}

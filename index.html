@@ -8,165 +8,320 @@
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/poper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/layout.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
-                <!--logo-->
-                <a class="navbar-brand col-lg-8 col-1" href="#">
-                    <img src="images/logo.png" width="30" height="30" alt="logo">
-                </a>
-                <!--menu-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--reponsive-->
-                <div class="collapse navbar-collapse col-lg-4 col-11" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sản phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Thông tin</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Liên Hệ</a>
-                        </li>
-                    </ul>
+<div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu box-shadow">
+            <!--logo-->
+            <a class="navbar-brand navbar-light col-lg-8 col-1" href="#">
+                <img src="images/logo.png" width="30" height="30" alt="logo">
+                <span class="text-white">MILO</span>
+            </a>
+            <!--menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--reponsive-->
+            <div class="collapse navbar-collapse col-lg-4 col-11" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html#new">Sản phẩm mới</a>
+                            <a class="dropdown-item" href="category.html#sale">Sản phẩm đang giảm giá</a>
+                            <a class="dropdown-item" href="category.html#hot">Sản phẩm bán chạy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Thông tin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/index/banner-01.png" class="d-block w-100"
+                         alt="he">
                 </div>
-            </nav>
-        </header>
-        <div class="recommand">
-            <div class="row">
-                <div class="re-option col-md-2 col-4">
+                <div class="carousel-item">
+                    <img src="images/index/banner-02.png" class="d-block w-100"
+                         alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/index/banner-03.png" class="d-block w-100"
+                         alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/index/banner-04.png" class="d-block w-100"
+                         alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="recommand">
+        <div class="row">
+            <div class="re-option col-md-2 col-4">
+                <a href="category.html#sale">
                     <div class="re-icon">
-                        <img src="images/index/voucher.png" width="100%">
+                        <img src="images/index/voucher.png" width="100%" alt="voucher">
                     </div>
                     <div class="re-heading">
                         Khuyến mãi
                     </div>
-                </div>
-                <div class="re-option col-md-2 col-4">
+                </a>
+            </div>
+            <div class="re-option col-md-2 col-4">
+                <a href="category.html">
                     <div class="re-icon">
-                        <img src="images/index/product.png" width="100%">
+                        <img src="images/index/product.png" width="100%" alt="product">
                     </div>
                     <div class="re-heading">
                         Sản phẩm
                     </div>
-                </div>
-                <div class="re-option col-md-2 col-4">
+                </a>
+            </div>
+            <div class="re-option col-md-2 col-4">
+                <a href="delivery.html">
                     <div class="re-icon">
-                        <img src="images/index/delivery.png" width="100%">
+                        <img src="images/index/about.png" width="100%" alt="about">
                     </div>
                     <div class="re-heading">
-                        Giao hàng
+                        Thông tin
                     </div>
-                </div>
-                <div class="re-option col-md-2 col-4">
+                </a>
+            </div>
+            <div class="re-option col-md-2 col-4">
+                <a href="charity.html">
                     <div class="re-icon">
-                        <img src="images/index/charity.png" width="100%">
+                        <img src="images/index/charity.png" width="100%" alt="charity">
                     </div>
                     <div class="re-heading">
                         Quỹ Milo
                     </div>
-                </div>
-                <div class="re-option col-md-2 col-4">
+                </a>
+            </div>
+            <div class="re-option col-md-2 col-4">
+                <a href="category.html#hot">
                     <div class="re-icon">
-                        <img src="images/index/account.png" width="100%">
+                        <img src="images/index/hot.png" width="100%" alt="hot">
+                    </div>
+                    <div class="re-heading">
+                        Xu hướng
+                    </div>
+                </a>
+            </div>
+            <div class="re-option col-md-2 col-4">
+                <a href="login.html">
+                    <div class="re-icon">
+                        <img src="images/index/account.png" width="100%" alt="account">
                     </div>
                     <div class="re-heading">
                         Tài khoản
                     </div>
-                </div>
-                <div class="re-option col-md-2 col-4">
-                    <div class="re-icon">
-                        <img src="images/index/account.png" width="100%">
-                    </div>
-                    <div class="re-heading">
-                        Tài khoản
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
-        <div class="sale-product">
-            <p id="Product-content"><b>Chương trình giảm giá đặc biệt</b></p>
-            <div class="row">
-                <div class="products col-md-4 col-12">
-                    <div class="images">
-                        <img src="images/saleproducts/product-1.png">
-                        <p class="product-name">Milo lúa mạch ít đường</p>
-                        <p class="new-price"><b>12.999VND</b></p>
-                        <p class="old-price">20.000VND</p>
-                    </div>
-                </div>
-                <div class="products col-md-4 col-12">
-                    <div class="images">
-                        <img src="images/saleproducts/product-2.png">
-                        <p class="product-name">Milo lúa mạch chocolate</p>
-                        <p class="new-price"><b>11.999VND</b></p>
-                        <p class="old-price">20.000VND</p>
-                    </div>
-                </div>
-                <div class="products col-md-4 col-12">
-                    <div class="images">
-                        <img src="images/saleproducts/product-3.png">
-                        <p class="product-name">Milo bình thủy tinh</p>
-                        <p class="new-price"><b>22.999VND</b></p>
-                        <p class="old-price">30.000VND</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sale-product">
-            <!--K-->
-        </div>
-        <footer>
-            <div class="row">
-            <!-- left-->
-                <div class="col-md-6 col-12 email-request">
-                    <form action="#" method="post" >
-                        <h4>Nhận thông báo về khuyến mãi</h4>
-                        <input type="email" placeholder="Nhập email tại đây">
-                        <input type="submit" value="Gửi">
-                    </form>
-                </div>
-             <!-- right-->
-                <div class="col-md-6 col-12 bottom-nav row">
-                    <div class="col-sm-6 bottom-left-nav">
-                        <ul>
-                            <li><a href="index.html">Trang chủ</a></li>
-                            <li><a href="#">Sản phẩm bán chạy</a></li>
-                            <li><a href="#">Sản phẩm đang hot</a></li>
-                            <li><a href="#">Quỹ từ thiện</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 bottom-right-nav">
-                        <ul>
-                            <li><a href="about.html">Về chúng tôi</a></li>
-                            <li><a href="contact.html">Liên hệ</a></li>
-                            <li><a href="#">Đánh giá</a></li>
-                            <li><a href="privacy.html">Chính sách bảo mật</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-12 protected-brand">
-                    <div class="protect-images">
-                        <img src="images/protect.png" width="100">
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 copyright">
-                    <br>Copy right © 2020 , Milo Team
-                </div>
-            </div>
-        </footer>
     </div>
+    <div class="sale-product">
+        <p class="heading"><b>Chương trình giảm giá đặc biệt</b></p>
+        <div class="row">
+            <div class="products col-md-4 col-12">
+                <div class="images">
+                    <img src="images/saleproducts/product-1.png" alt="product-1">
+                    <p class="product-name">Milo lúa mạch ít đường</p>
+                    <p class="new-price"><b>12.999VND</b></p>
+                    <p class="old-price">20.000VND</p>
+                </div>
+            </div>
+            <div class="products col-md-4 col-12">
+                <div class="images">
+                    <img src="images/saleproducts/product-2.png" alt="product-2">
+                    <p class="product-name">Milo lúa mạch chocolate</p>
+                    <p class="new-price"><b>11.999VND</b></p>
+                    <p class="old-price">20.000VND</p>
+                </div>
+            </div>
+            <div class="products col-md-4 col-12">
+                <div class="images">
+                    <img src="images/saleproducts/product-3.png" alt="product-2">
+                    <p class="product-name">Milo bình thủy tinh</p>
+                    <p class="new-price"><b>22.999VND</b></p>
+                    <p class="old-price">30.000VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hot-product">
+        <p class="heading"><b>Sản phẩm nổi bật</b></p>
+        <div class="row">
+            <div class="col-md-6 col-12 hot-area">
+                <div class="row hot-field">
+                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1">
+                    <div class="col-md-6 col-12 hot-content">
+                        <p class="product-name">Milo hộp giấy các loại</p>
+                        <p class="price">12.999 đ</p>
+                        <p class="count-search"> 1200 người tìm kiếm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 hot-area">
+                <div class="row hot-field">
+                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-2">
+                    <div class="col-md-6 col-12 hot-content">
+                        <p class="product-name">Milo hộp giấy các loại</p>
+                        <p class="price">12.999 đ</p>
+                        <p class="count-search"> 1200 người tìm kiếm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12 hot-area">
+                <div class="row hot-field">
+                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-3">
+                    <div class="col-md-6 col-12 hot-content">
+                        <p class="product-name">Milo hộp giấy các loại</p>
+                        <p class="price">12.999 đ</p>
+                        <p class="count-search"> 1200 người tìm kiếm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 hot-area">
+                <div class="row hot-field">
+                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-4">
+                    <div class="col-md-6 col-12 hot-content">
+                        <p class="product-name">Milo hộp giấy các loại</p>
+                        <p class="price">12.999 đ</p>
+                        <p class="count-search"> 1200 người tìm kiếm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <div id="show-on-scroll"></div>
+        <div class="row review-area" >
+            <div class="avatar col-md-4 col-12">
+                <img src="images/index/reviewer-1.png" width="50%" alt="avatar-reviewer">
+            </div>
+            <div class="review-content col-md-8 col-12 radius-left">
+                <p>
+                    Sữa rất ngon nhưng không có vị người yêu cũ nên tôi đánh giá không cao
+                </p>
+            </div>
+        </div>
+        <div class="row review-area">
+            <div class="avatar col-md-4 col-12 order-2">
+                <img src="images/index/reviewer-2.png" width="50%" alt="avatar-reviewer">
+            </div>
+            <div class="review-content col-md-8 col-12 radius-right">
+                <p>
+                    Sữa ok đấy nhưng tôi không hiểu vì sao nó lại bắt lửa ??
+                </p>
+            </div>
+        </div>
+        <div class="row review-area">
+            <div class="avatar col-md-4 col-12">
+                <img src="images/index/reviewer-3.png" width="50%" alt="avatar-reviewer">
+            </div>
+            <div class="review-content col-md-8 col-12 radius-left">
+                <p>
+                    Sau khi uống sữa tôi thấy hình ảnh thầy Huấn trong đầu tôi với câu "cần lao vi tiên thủ"
+                </p>
+            </div>
+        </div>
+        <div class="row review-area" >
+            <div class="avatar col-md-4 col-12 order-2">
+                <img src="images/index/reviewer-4.png" width="50%" alt="avatar-reviewer">
+            </div>
+            <div class="review-content col-md-8 col-12 radius-right">
+                <p>
+                    Tôi thấy mọi người review nhiều quá nên tôi review theo thôi , đấy review của tôi đấy !
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <!-- left-->
+            <div class="col-md-6 col-12 email-request">
+                <form action="#" method="post" >
+                    <h4>Nhận thông báo về khuyến mãi</h4>
+                    <input type="email" placeholder="Nhập email tại đây">
+                    <input type="submit" value="Gửi">
+                </form>
+            </div>
+            <!-- right-->
+            <div class="col-md-6 col-12 bottom-nav row">
+                <div class="col-sm-6 bottom-left-nav">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="category.html#sale">Sản phẩm bán chạy</a></li>
+                        <li><a href="category.html#hot">Sản phẩm đang hot</a></li>
+                        <li><a href="#">Quỹ từ thiện</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 bottom-right-nav">
+                    <ul>
+                        <li><a href="about.html">Về chúng tôi</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#">Đánh giá</a></li>
+                        <li><a href="privacy.html">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-12 protected-brand">
+                <div class="protect-images">
+                    <img src="images/protect.png" width="100" alt="protect">
+                </div>
+            </div>
+            <div class="col-md-4 col-12 copyright">
+                <br>Copy right © 2020 , Milo Team
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.recommand',{ delay: 300 });
+    sr.reveal('.banner',{ delay: 300 });
+    sr.reveal('.sale-product',{ delay:300 });
+    sr.reveal('.hot-product',{ delay:300 });
+    sr.reveal('.review-area',{ delay: 500 },{rotate: {x: 20, y: 20}});
+    sr.reveal('footer',{ delay: 300 });
+</script>
 </html>
