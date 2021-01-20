@@ -44,3 +44,47 @@
     text-decoration: line-through;
 }
 /*=================================*/
+.product-name{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+.price{
+    color: red;
+    font-weight: bold;
+    font-size: 36px;
+}
+.count-search{
+    color: dimgrey;
+    font-size: 25px;
+}
+
+.hot-content{
+    padding: 10px;
+    text-align: left;
+}
+.hot-product {
+    background: #0C760A;
+}
+.hot-field{
+    margin: 10px;
+    background: white;
+    padding: 60px;
+    align-items: center;
+    border-radius: 12px;}
+.h1, h1 {
+    font-size: 2.5rem;
+    text-align: right;
+}
+.hot-image-1{
+    width: 500%;
+    padding: 20px;
+}
+.hot-image-4{
+    padding-top: -70px;
+}
+#product-content{
+    color: aliceblue;
+    justify-content: center;
+    font-size: 200%;
+}
