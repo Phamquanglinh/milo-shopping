@@ -10,7 +10,15 @@
     background: radial-gradient(#50e356, transparent);
 }
 .row{
-    margin: 0!important;
+    margin: 10px 0!important;
+}
+.re-heading {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.re-icon img {
+    border-radius: 12px;
 }
 /*Sale*/
 .col-md-4{
@@ -73,6 +81,7 @@
 }
 .hot-product {
     background: #0C760A;
+    padding-bottom: 27px;
 }
 .hot-field{
     margin: 10px;
