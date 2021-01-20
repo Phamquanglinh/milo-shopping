@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Giỏ hàng</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/poper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <script src="js/cart.js"></script>
+
+    </head>
+    <body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+                <!--logo-->
+                <a class="navbar-brand col-lg-8 col-1" href="#">
+                    <img src="images/logo.png" width="30" height="30" alt="logo">
+                </a>
+                <!--menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--reponsive-->
+                <div class="collapse navbar-collapse col-lg-4 col-11" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thông tin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+            <form action="#">
+                <div class="search-in-cart">
+                        <button id="search"><img id="search-icon" src="images/search-icon.png"></button>
+                        <input id="search-cart" type="text" name="search-in-cart" placeholder="Tìm kiếm hàng trong giỏ">
+                </div>
+            </form>
+        <div class="your-products row">
+            <div class="col-md-12 row">
+                <div class="col-md-3"><img class="product" src="images/saleproducts/product-1.png" width="100%"></div>
+                <div class="col-md-9">
+                    <div class="info-product">
+                    <p class="product-name">Milo lúa mạch ít đường</p>
+                    <p class="new-price"><b>12.999VND</b></p>
+                    <p class="old-price">20.000VND</p>
+                    <p class="your-product">Số lượng:</p>
+                    <input class="your-choice" type="number"	id="n1"/><br>
+                    <input class="your-choice" type="text"	id="n2" placeholder="Tổng giá tiền" /><br>
+                    <input class="your-choice" type="button" value="Thanh toán" onclick="totalPrice1()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 row">
+                <div class="col-md-3"><img class="product" src="images/saleproducts/product-2.png" width="100%"></div>
+                <div class="col-md-9">
+                    <div class="info-product">
+                    <p class="product-name">Milo lúa mạch chocolate</p>
+                    <p class="new-price"><b>11.999VND</b></p>
+                    <p class="old-price">20.000VND</p>
+                    <p class="your-product">Số lượng:</p>
+                    <input class="your-choice" type="number"	id="n3"/><br>
+                    <input class="your-choice" type="text"	id="n4" placeholder="Tổng giá tiền" /><br>
+                    <input class="your-choice" type="button" value="Thanh toán" onclick="totalPrice2()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 row">
+                <div class="col-md-3"><img class="product" src="images/saleproducts/product-3.png" width="100%"></div>
+                <div class="col-md-9">
+                    <div class="info-product">
+                    <p class="product-name">Milo bình thủy<br> tinh</p>
+                    <p class="new-price"><b>22.999VND</b></p>
+                    <p class="old-price">30.000VND</p>
+                    <p class="your-product">Số lượng:</p>
+                    <input class="your-choice"  type="number"	id="n5"/><br>
+                    <input class="your-choice" type="text"	id="n6" placeholder="Tổng giá tiền" /><br>
+                    <input class="your-choice" type="button" value="Thanh toán" onclick="totalPrice3()">
+                    </div>
+                </div>
+            </div>
+            <div class="your-cart">
+
+                <p><b>Giỏ hàng: </b><span id="totalProduct">n Sản phẩm</span></p>
+                <p><b>Thành tiền: </b><span id="totalPrice">n Sản phẩm</span></p>
+                <input type="button" onclick="totalAll()" value="mua hàng">
+
+
+                    <p>Người nhận hàng: Phạm Quang Linh</p>
+                    <p>Địa chỉ: Ký túc xá Mỹ ĐÌnh 2 Nam Từ Liêm Hà Nội</p>
+                    <p>Số điện thoại: 094 800 240</p>
+
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <!-- left-->
+                <div class="col-md-6 col-12 email-request">
+                    <form action="#" method="post" >
+                        <h4>Nhận thông báo về khuyến mãi</h4>
+                        <input type="email" placeholder="Nhập email tại đây">
+                        <input type="submit" value="Gửi">
+                    </form>
+                </div>
+                <!-- right-->
+                <div class="col-md-6 col-12 bottom-nav row">
+                    <div class="col-sm-6 bottom-left-nav">
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm bán chạy</a></li>
+                            <li><a href="#">Sản phẩm đang hot</a></li>
+                            <li><a href="#">Quỹ từ thiện</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 bottom-right-nav">
+                        <ul>
+                            <li><a href="about.html">Về chúng tôi</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                            <li><a href="#">Đánh giá</a></li>
+                            <li><a href="privacy.html">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-12 protected-brand">
+                    <div class="protect-images">
+                        <img src="images/protect.png" width="100">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 copyright">
+                    <br>Copy right © 2020 , Milo Team
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>
