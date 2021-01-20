@@ -1,7 +1,7 @@
 .recommand{
-    padding: 10px;
     background: #d7fad8;
     font-size: 100%;
+    margin: auto;
 }
 .re-option{
     margin: auto;
@@ -10,7 +10,17 @@
     padding: 20px;
     background: radial-gradient(#50e356, transparent);
 }
-
+.row{
+    margin: 10px 0!important;
+}
+.re-heading {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.re-icon img {
+    border-radius: 12px;
+}
 /*Sale*/
 .col-md-4{
     align-content: center;
@@ -27,11 +37,11 @@
     margin: 0;
     background-color: green;
 }
-#product-content{
+.heading{
     font-size: 200%;
     text-align: center;
     color: aliceblue;
-    border-text: bold;
+    font-weight: bold;
 }
 .images{
     background-color: white;
@@ -42,7 +52,7 @@
 .product-name{
     text-align: center;
     font-size: 200%;
-    border-text: bold;
+    font-weight: bold;
 }
 .new-price{
     text-align: center;
@@ -54,3 +64,77 @@
     text-decoration: line-through;
 }
 /*Hot*/
+.product-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.price{
+    color: red;
+    font-weight: bold;
+}
+.count-search{
+    color: dimgrey;
+}
+.hot-image{}
+.hot-content{
+    padding: 10px;
+    text-align: center;
+}
+.hot-product {
+    background: #0C760A;
+    padding-bottom: 25px;
+}
+.hot-field{
+    margin: 11px!important;
+    background: white;
+    padding: 17px!important;
+    align-items: center;
+    border-radius: 12px;
+}
+/*Review*/
+@keyframes fade-in {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+.review{
+    max-width: 1281px;
+    margin: auto;
+    padding: 27px;
+}
+.review .avatar{
+    text-align: center;
+}
+.review .review-content{
+    padding: 17px 45px;
+    font-size: 200%;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    background: green;
+}
+.review .review-area{
+    margin: 40px 0;
+    transition: 0.3s;
+}
+.radius-left{
+    border-radius: 100px 0 0 100px;
+    border-right: 8px solid yellow;
+}
+.radius-right{
+    border-radius: 0 100px 100px 0;
+    border-left: 8px solid yellow;
+}
+@media screen and (max-width:768px ) {
+    .avatar{
+        order: 0!important;
+        padding-bottom: 40px;
+    }
+}
+header{
+    animation: fade-in 0.5s;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
