@@ -8,9 +8,14 @@ h3 {
 .col-left {
     background-color: #e5e5e5;
 }
+.col-right {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
 .extra {
     margin-right: 11%;
-    margin-left: -3%;
+    margin-left: 5%;
     background-color: #69D067;
 }
 #titles {
@@ -20,10 +25,12 @@ h3 {
 .buttons-added {
     margin-top: 35%;
     margin-bottom: 20px;
+
 }
 #submit-button-left {
-    margin-left: 15%;
-
+    margin-left: 20%;
+    margin-top: 1%;
+    width: 60%;
 }
 .text-detail {
     background: #69D067;
@@ -34,6 +41,12 @@ h3 {
 }
 #submit-button-right {
     margin-top: 2%;
+    width: 60%;
+    background-color: #929E47;
+}
+h4 {
+    padding-left: 15%;
+    font-size: 200%;
 }
 
 
