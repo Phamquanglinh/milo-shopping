@@ -1,9 +1,8 @@
 h3 {
     text-decoration-line: line-through;
 }
-
 .main {
-    margin-top: 5%;
+    margin: 12px auto;
 }
 .col-left {
     background-color: #e5e5e5;
@@ -14,18 +13,18 @@ h3 {
 }
 
 .extra {
-    margin-right: 11%;
-    margin-left: 5%;
-    background-color: #69D067;
+    border: 14px solid #28a745;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 0 auto;
 }
 #titles {
     margin-left: 2%;
 }
 
 .buttons-added {
-    margin-top: 35%;
     margin-bottom: 20px;
-
 }
 #submit-button-left {
     margin-left: 20%;
@@ -33,22 +32,28 @@ h3 {
     width: 60%;
 }
 .text-detail {
-    background: #69D067;
-    margin: 3% 7% 3% 7%;
+    /* background: #69D067; */
+    padding: 30px;
+    margin: 12px auto;
 }
 #icon {
     text-align: center;
 }
 #submit-button-right {
     margin-top: 2%;
-    width: 60%;
     background-color: #929E47;
 }
 h4 {
-    padding-left: 15%;
     font-size: 200%;
 }
 
+#col-right img {
+    width: 100%;
+    margin: auto;
+}
 
-
-
+#col-right {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
