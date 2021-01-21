@@ -1,91 +1,60 @@
-.recommand{
-    padding: 10px;
-    background: #d7fad8;
-    font-size: 100%;
+.content .row {
+    margin: 0;
 }
-.re-option{
-    margin: auto;
-    text-align: center;
-    border-radius: 25px;
-    padding: 20px;
-    background: radial-gradient(#50e356, transparent);
-}
-#search-icon{
-   width: 110%;
-    height: auto;
-}
-#search{
-    width: 70px;
-    height: 70px;
-    padding: 20px;
-    border-radius: 10px;
+.w-20 {
+    width: 20%;
     border: none;
-    background-color: #0A9A07;
+    text-align: center;
 }
-#search-cart{
-    width: 80%;
-    margin-left: 1%;
+.order-detail {
+    zoom: 2;
     padding: 20px;
-    border: 3px solid black;
-    border-radius: 10px;
 }
-.col-md-12{
-    background-color: #0b2e13;
-    width: 100%;
-    margin-top: 10px;
-    align-content: center;
+.count {
+    margin: 0 -15px !important;
+}
+.order-image.col-md-4.col-12 {
+    display: flex;
     align-items: center;
-    align-self: center;
-    margin-left: 0%;
-    margin-bottom: 1%;
+    padding: 56px;
 }
-#result1{
-    color: white;
+.order{
+    transition: 0.6s;
 }
-.product{
-    width: 50%;
+.order.row {
+    background: white;
+    border: 2px solid yellow;
+}
 
+.all-orders {
+    padding: 22px;
 }
-.col-md-3{
-    padding: 2%;
+.total-checkout.row {
+    padding: 17px;
+    background: #06d60f;
 }
-.product-name{
-    text-align: center;
-    font-size: 200%;
-    border-text: bold;
-}
-.new-price{
-    text-align: center;
-    color: #d60606;
-    font-size: 150%;
-}
-.old-price{
-    text-align: center;
-    text-decoration: line-through;
-}
-.info-product{
-    background-color: white;
-    padding: 10px;
-    border-radius: 20px;
-}
-.col-md-9{
+
+.left-checkout {
+    background: #fff;
     padding: 10px;
 }
-.your-choice{
-    width: 30%;
-    text-align: center;
-    margin-left: 35%;
+.right-checkout{
+    padding: 26px;
+    background: #fff;
+    border-left: 2px solid yellow;
 }
-.your-product{
-    margin-left: 35%;
-    font-size: 20px;
+.search-cart {
+    padding: 28px;
 }
-.your-cart{
+
+.search-cart input {
+    padding: 17px;
     width: 100%;
+    border: none;
     font-size: 20px;
-    padding: 20px;
-    color: #727b84;
-    background-color: #0b2e13;
-    border-radius: 10px;
-    margin: 10px;
+}
+.line-through {
+    zoom: 0.8;
+    color: gray;
+    text-decoration: line-through;
 }

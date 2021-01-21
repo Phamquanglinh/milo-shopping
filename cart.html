@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html lang="vn">
     <head>
         <meta charset="UTF-8">
         <title>Giỏ hàng</title>
@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/cart.css">
         <script src="js/cart.js"></script>
-
     </head>
     <body>
     <div class="container-fluid">
@@ -44,67 +43,119 @@
                 </div>
             </nav>
         </header>
-
-            <form action="#">
-                <div class="search-in-cart">
-                        <button id="search"><img id="search-icon" src="images/search-icon.png"></button>
-                        <input id="search-cart" type="text" name="search-in-cart" placeholder="Tìm kiếm hàng trong giỏ">
+        <div class="content">
+            <div class="search-cart">
+                <input type="search" id="find" placeholder="Tìm kiếm đơn hàng" onkeyup="findOrders()">
+            </div>
+            <div class="all-orders">
+                <div class="order row">
+                    <div class="order-image col-md-4 col-12">
+                        <img src="images/cart/cart-1.png" class="w-100">
+                    </div>
+                    <div class="col-md-8 col-12 d-flex align-items-center">
+                        <div class="order-detail">
+                            <div class="heading">Sữa Milo không đường loại hộp giấy</div>
+                            <div class="price">
+                                <span class="text-danger new-price">12.999</span><span class="text-danger"> đ</span>
+                                <span class="line-through">20.999 đ</span>
+                            </div>
+                            <div class="count row">
+                                <div class="col-12 col-md-6">Số lượng: </div>
+                                <div class="col-12 col-md-6c" id="count-1">
+                                    <div class="btn-success btn" onclick="addCount(1,'min')">-</div>
+                                    <input type="number" class="w-20" value="1" id="slot-1">
+                                    <div class="btn btn-success" onclick="addCount(1,'add')">+</div>
+                                </div>
+                            </div>
+                            <div class="total">
+                            <span id="total-1"class="text-danger">
+                                12.999
+                            </span>
+                                <span>đ</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
-        <div class="your-products row">
-            <div class="col-md-12 row">
-                <div class="col-md-3"><img class="product" src="images/saleproducts/product-1.png" width="100%"></div>
-                <div class="col-md-9">
-                    <div class="info-product">
-                    <p class="product-name">Milo lúa mạch ít đường</p>
-                    <p class="new-price"><b>12.999VND</b></p>
-                    <p class="old-price">20.000VND</p>
-                    <p class="your-product">Số lượng:</p>
-                    <input class="your-choice" type="number"	id="n1"/><br>
-                    <input class="your-choice" type="text"	id="n2" placeholder="Tổng giá tiền" /><br>
-                    <input class="your-choice" type="button" value="Thanh toán" onclick="totalPrice1()">
+                <div class="order row">
+                    <div class="order-image col-md-4 col-12">
+                        <img src="images/cart/cart-2.png" class="w-100">
+                    </div>
+                    <div class="col-md-8 col-12 d-flex align-items-center">
+                        <div class="order-detail">
+                            <div class="heading">Sữa Milo có nắp hộp lúa mạch</div>
+                            <div class="price">
+                                <span class="text-danger new-price">15.999</span><span class="text-danger"> đ</span>
+                                <span class="line-through">25.999 đ</span>
+                            </div>
+                            <div class="count row">
+                                <div class="col-12 col-md-6">Số lượng: </div>
+                                <div class="col-12 col-md-6c" id="count-2">
+                                    <div class="btn-success btn" onclick="addCount(2,'min')">-</div>
+                                    <input type="number" class="w-20" value="1" id="slot-2">
+                                    <div class="btn btn-success" onclick="addCount(2,'add')">+</div>
+                                </div>
+                            </div>
+                            <div class="total">
+                            <span id="total-2"class="text-danger">
+                                12.999
+                            </span>
+                                <span>đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order row">
+                    <div class="order-image col-md-4 col-12">
+                        <img src="images/cart/cart-3.png" class="w-100">
+                    </div>
+                    <div class="col-md-8 col-12 d-flex align-items-center">
+                        <div class="order-detail">
+                            <div class="heading">Sữa Milo lon lúa mạch</div>
+                            <div class="price">
+                                <span class="text-danger new-price">12.999</span><span class="text-danger"> đ</span>
+                                <span class="line-through">20.999 đ</span>
+                            </div>
+                            <div class="count row">
+                                <div class="col-12 col-md-6">Số lượng: </div>
+                                <div class="col-12 col-md-6c" id="count-3">
+                                    <div class="btn-success btn" onclick="addCount(3,'min')">-</div>
+                                    <input type="number" class="w-20" value="1" id="slot-3">
+                                    <div class="btn btn-success" onclick="addCount(3,'add')">+</div>
+                                </div>
+                            </div>
+                            <div class="total">
+                            <span id="total-3"class="text-danger">
+                                12.999
+                            </span>
+                                <span>đ</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 row">
-                <div class="col-md-3"><img class="product" src="images/saleproducts/product-2.png" width="100%"></div>
-                <div class="col-md-9">
-                    <div class="info-product">
-                    <p class="product-name">Milo lúa mạch chocolate</p>
-                    <p class="new-price"><b>11.999VND</b></p>
-                    <p class="old-price">20.000VND</p>
-                    <p class="your-product">Số lượng:</p>
-                    <input class="your-choice" type="number"	id="n3"/><br>
-                    <input class="your-choice" type="text"	id="n4" placeholder="Tổng giá tiền" /><br>
-                    <input class="your-choice" type="button" value="Thanh toán" onclick="totalPrice2()">
+            <div class="total-checkout row">
+                <div class="col-12 col-md-6 left-checkout font-2">
+                    <div class="font-weight-bold">Số sản phẩm:
+                        <span id="total-quantity">12</span>
+                    </div>
+                    <div>Thành tiền:
+                        <span  class="text-danger" id="total-price">12000</span>
+                        <span  class="text-danger">đ</span>
+                    </div>
+                    <div id="voucher">Mã giảm giá :XHD-10</div>
+                    <div>Thanh toán
+                        <span class="text-danger" id="after-price">12000</span>
+                        <span class="text-danger">đ</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-12 row">
-                <div class="col-md-3"><img class="product" src="images/saleproducts/product-3.png" width="100%"></div>
-                <div class="col-md-9">
-                    <div class="info-product">
-                    <p class="product-name">Milo bình thủy<br> tinh</p>
-                    <p class="new-price"><b>22.999VND</b></p>
-                    <p class="old-price">30.000VND</p>
-                    <p class="your-product">Số lượng:</p>
-                    <input class="your-choice"  type="number"	id="n5"/><br>
-                    <input class="your-choice" type="text"	id="n6" placeholder="Tổng giá tiền" /><br>
-                    <input class="your-choice" type="button" value="Thanh toán" onclick="totalPrice3()">
+                <div class="col-12 col-md-6 right-checkout">
+                    <div class="infomation-order">
+                        <p>Họ và tên :Phạm Quang Linh</p>
+                        <p>Địa chỉ: Đơn nguyên 5,KTX MỸ Đình 2</p>
+                        <p>Số điện thoại:0904 800 240</p>
                     </div>
+                    <div class="btn btn-success" onclick="alert('Mua thành công')">Xác nhận mua</div>
                 </div>
-            </div>
-            <div class="your-cart">
-
-                <p><b>Giỏ hàng: </b><span id="totalProduct">n Sản phẩm</span></p>
-                <p><b>Thành tiền: </b><span id="totalPrice">n Sản phẩm</span></p>
-                <input type="button" onclick="totalAll()" value="mua hàng">
-
-
-                    <p>Người nhận hàng: Phạm Quang Linh</p>
-                    <p>Địa chỉ: Ký túc xá Mỹ ĐÌnh 2 Nam Từ Liêm Hà Nội</p>
-                    <p>Số điện thoại: 094 800 240</p>
-
             </div>
         </div>
         <footer>
@@ -149,5 +200,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/cart.js"></script>
     </body>
 </html>

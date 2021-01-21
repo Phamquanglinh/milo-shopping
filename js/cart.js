@@ -1,28 +1,53 @@
-function totalPrice1(){
-        var number1 = document.getElementById('n1').value;
-        var result1 = parseFloat(number1) * 12999;
-        document.getElementById('n2').value = result1 + "VND";
+//Filter Order Using Regex
+orders=document.getElementsByClassName("order");
+function showOrders(classIndex){
+        orders[classIndex].classList.remove("d-none");
 }
-function totalPrice2(){
-        var number2 = document.getElementById('n3').value;
-        var result2 = parseFloat(number2) * 18999;
-        document.getElementById('n4').value = result2 + "VND";
+function hideOrders(classIndex){
+        orders[classIndex].classList.add("d-none");
 }
-function totalPrice3(){
-        var number3 = document.getElementById('n5').value;
-        var result3 = parseFloat(number3) * 22999;
-        document.getElementById('n6').value = result3 + "VND";
+function findOrders(){
+        pattern=document.getElementById("find").value;
+        var re = new RegExp(pattern);
+        for(i=0;i<orders.length;i++){
+                if(re.test(orders[i].innerText)){
+                        showOrders(i);
+                }else {
+                        hideOrders(i);
+                }
+        }
 }
-function totalAll(){
-        var number1 = document.getElementById('n1').value;
-        var result1 = parseFloat(number1) * 12999;
-        var number2 = document.getElementById('n3').value;
-        var result2 = parseFloat(number2) * 18999;
-        var number3 = document.getElementById('n5').value;
-        var result3 = parseFloat(number3) * 22999;
-        var yourProducts = parseFloat(number1) + parseFloat(number2) + parseFloat(number3);
-        document.getElementById('totalProduct').innerHTML=yourProducts + "sản phẩm";
-        var result = parseFloat(result1) + parseFloat(result2) + parseFloat(result3);
-        document.getElementById('totalPrice').innerHTML = result + "VND";
+// Checkout
+function addCount(count,method){
+   //add or minus value
+   price=document.getElementsByClassName("new-price")[count-1].innerText;
+   position='slot-'+count; //get id
+   slot =Number(document.getElementById(position).value); //DOM GET SLOT
+   if(method=='add'){
+           slot+=1;
+   }else{
+       if(slot >0){
+           slot-=1;
+       }
+   }
+   document.getElementById(position).value=(slot);// DOM POST SLOT
+   total='total-'+count;
+   document.getElementById(total).innerText=Math.round(price*slot*1000)/1000;
+   //Checkout
+    function getPrice(index) {
+        return document.getElementById(index).innerText; //Function get price form index id
+    }
+    function getQuantity(index){
+        return document.getElementById(index).value;
+    }
+    totalPrice=0;
+    totalQuantity=0;
+    for (i=0;i<orders.length;i++){
+        checkoutIndex='total-'+(i+1); // Make ID checkout
+        quantityIndex='slot-'+(i+1); // Make ID quantity
+        totalQuantity+=Number(getQuantity(quantityIndex));
+        totalPrice+=Number(getPrice(checkoutIndex));
+    }
+    document.getElementById("total-price").innerText=Math.round(totalPrice * 1000) /1000;
+    document.getElementById("total-quantity").innerText=totalQuantity;
 }
-
