@@ -13,10 +13,11 @@
     <body>
         <div class="container-fluid">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light menu box-shadow">
                     <!--logo-->
-                    <a class="navbar-brand col-lg-8 col-1" href="#">
+                    <a class="navbar-brand navbar-light col-lg-8 col-1" href="#">
                         <img src="images/logo.png" width="30" height="30" alt="logo" />
+                        <span class="text-white">MILO</span>
                     </a>
                     <!--menu-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +27,23 @@
                     <div class="collapse navbar-collapse col-lg-4 col-11" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="category.html#new">Sản phẩm mới</a>
+                                    <a class="dropdown-item" href="category.html#sale">Sản phẩm đang giảm giá</a>
+                                    <a class="dropdown-item" href="category.html#hot">Sản phẩm bán chạy</a>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sản phẩm</a>
+                                <a class="nav-link" href="about.html">Thông tin</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Thông tin</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Liên Hệ</a>
+                                <a class="nav-link" href="contact.html">Liên Hệ</a>
                             </li>
                         </ul>
                     </div>
@@ -106,8 +114,8 @@
                     <div class="col-md-6 col-12 email-request">
                         <form action="#" method="post">
                             <h4>Nhận thông báo về khuyến mãi</h4>
-                            <input type="email" placeholder="Nhập email tại đây" />
-                            <input type="submit" value="Gửi" />
+                            <input type="email" placeholder="Nhập email tại đây" class="btn text-left">
+                            <input type="submit" class="btn btn-success" value="Gửi">
                         </form>
                     </div>
                     <!-- right-->
@@ -115,8 +123,8 @@
                         <div class="col-sm-6 bottom-left-nav">
                             <ul>
                                 <li><a href="index.html">Trang chủ</a></li>
-                                <li><a href="#">Sản phẩm bán chạy</a></li>
-                                <li><a href="#">Sản phẩm đang hot</a></li>
+                                <li><a href="category.html#sale">Sản phẩm bán chạy</a></li>
+                                <li><a href="category.html#hot">Sản phẩm đang hot</a></li>
                                 <li><a href="#">Quỹ từ thiện</a></li>
                             </ul>
                         </div>
@@ -133,7 +141,7 @@
                 <div class="row">
                     <div class="col-md-8 col-12 protected-brand">
                         <div class="protect-images">
-                            <img src="images/protect.png" width="100" />
+                            <img src="images/protect.png" width="100" alt="protect" />
                         </div>
                     </div>
                     <div class="col-md-4 col-12 copyright">
