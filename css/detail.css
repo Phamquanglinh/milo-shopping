@@ -13,11 +13,12 @@ h3 {
 }
 
 .extra {
-    border: 14px solid #28a745;
+    /* border: 14px solid #28a745; */
     padding: 7px;
     background-color: #ffffff;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     margin: 0 auto;
+    box-shadow: 1px 1px 18px 0px black;
 }
 #titles {
     margin-left: 2%;
@@ -32,7 +33,7 @@ h3 {
     width: 60%;
 }
 .text-detail {
-    /* background: #69D067; */
+    background: #FFFFFF;
     padding: 30px;
     margin: 12px auto;
 }
@@ -56,4 +57,10 @@ h4 {
     display: flex;
     align-items: center;
     padding: 10px;
+}
+.badded-count a {
+    color: white;
+}
+.text-detail p {
+    padding: 0 15px;
 }

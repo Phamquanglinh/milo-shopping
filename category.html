@@ -36,9 +36,9 @@
                                     Sản phẩm
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="category.html#new">Sản phẩm mới</a>
-                                    <a class="dropdown-item" href="category.html#sale">Sản phẩm đang giảm giá</a>
-                                    <a class="dropdown-item" href="category.html#hot">Sản phẩm bán chạy</a>
+                                    <a class="dropdown-item" onclick="swapProduct('new')">Sản phẩm mới</a>
+                                    <a class="dropdown-item" onclick="swapProduct('sale')">Sản phẩm đang giảm giá</a>
+                                    <a class="dropdown-item" onclick="swapProduct('hot')">Sản phẩm bán chạy</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -60,134 +60,262 @@
                         </p>
                         <div class="row">
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo hộp giấy các loại</p>
-                                        <p class="price">12.999 đ</p>
-                                        <p class="count-search">1200 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo hộp giấy các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">1200 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo gói các loại</p>
-                                        <p class="price">32.999 đ</p>
-                                        <p class="count-search">1000 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo gói các loại</p>
+                                            <p class="price">32.999 đ</p>
+                                            <p class="count-search">1000 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo bình thủy tinh</p>
-                                        <p class="price">22.999 đ</p>
-                                        <p class="count-search">800 người tìm kiếm</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo lon các loại</p>
-                                        <p class="price">12.999 đ</p>
-                                        <p class="count-search">500 người tìm kiếm</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo hộp giấy các loại</p>
-                                        <p class="price">12.999 đ</p>
-                                        <p class="count-search">1200 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo bình thủy tinh</p>
+                                            <p class="price">22.999 đ</p>
+                                            <p class="count-search">800 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo gói các loại</p>
-                                        <p class="price">32.999 đ</p>
-                                        <p class="count-search">1000 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo lon các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">500 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo bình thủy tinh</p>
-                                        <p class="price">22.999 đ</p>
-                                        <p class="count-search">800 người tìm kiếm</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo lon các loại</p>
-                                        <p class="price">12.999 đ</p>
-                                        <p class="count-search">500 người tìm kiếm</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo hộp giấy các loại</p>
-                                        <p class="price">12.999 đ</p>
-                                        <p class="count-search">1200 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo hộp giấy các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">1200 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo gói các loại</p>
-                                        <p class="price">32.999 đ</p>
-                                        <p class="count-search">1000 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo gói các loại</p>
+                                            <p class="price">32.999 đ</p>
+                                            <p class="count-search">1000 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo bình thủy tinh</p>
-                                        <p class="price">22.999 đ</p>
-                                        <p class="count-search">800 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo bình thủy tinh</p>
+                                            <p class="price">22.999 đ</p>
+                                            <p class="count-search">800 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-md-6 col-12 hot-area">
-                                <div class="row hot-field">
-                                    <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
-                                    <div class="col-md-6 col-12 hot-content">
-                                        <p class="product-name">Milo lon các loại</p>
-                                        <p class="price">12.999 đ</p>
-                                        <p class="count-search">500 người tìm kiếm</p>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo lon các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">500 người tìm kiếm</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo hộp giấy các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">1200 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo gói các loại</p>
+                                            <p class="price">32.999 đ</p>
+                                            <p class="count-search">1000 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo bình thủy tinh</p>
+                                            <p class="price">22.999 đ</p>
+                                            <p class="count-search">800 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo lon các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">500 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo hộp giấy các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">1200 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo gói các loại</p>
+                                            <p class="price">32.999 đ</p>
+                                            <p class="count-search">1000 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo bình thủy tinh</p>
+                                            <p class="price">22.999 đ</p>
+                                            <p class="count-search">800 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo lon các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">500 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-1 col-md-6 col-12" src="images/hot-products/milo-product-1.png" alt="hot-1" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo hộp giấy các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">1200 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-2.png" alt="hot-2" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo gói các loại</p>
+                                            <p class="price">32.999 đ</p>
+                                            <p class="count-search">1000 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image-3 col-md-6 col-12" src="images/hot-products/milo-product-3.png" alt="hot-3" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo bình thủy tinh</p>
+                                            <p class="price">22.999 đ</p>
+                                            <p class="count-search">800 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-12 hot-area">
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="row hot-field">
+                                        <img class="hot-image col-md-6 col-12" src="images/hot-products/milo-product-4.png" alt="hot-4" />
+                                        <div class="col-md-6 col-12 hot-content">
+                                            <p class="product-name">Milo lon các loại</p>
+                                            <p class="price">12.999 đ</p>
+                                            <p class="count-search">500 người tìm kiếm</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -198,112 +326,124 @@
                         <p class="bg-success text-white text-center p-3 font-2">Sản phẩm giảm giá</p>
                         <div class="row">
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-1.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch ít đường</p>
-                                    <p class="new-price"><b>12.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-1.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch ít đường</p>
+                                        <p class="new-price"><b>12.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-2.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch chocolate</p>
-                                    <p class="new-price"><b>11.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-2.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch chocolate</p>
+                                        <p class="new-price"><b>11.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-3.png" width="100%" />
-                                    <p class="product-name">
-                                        Milo bình thủy<br />
-                                        tinh
-                                    </p>
-                                    <p class="new-price"><b>22.999VND</b></p>
-                                    <p class="old-price">30.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-3.png" width="100%" />
+                                        <p class="product-name">Milo bình thủy tinh</p>
+                                        <p class="new-price"><b>22.999VND</b></p>
+                                        <p class="old-price">30.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-1.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch ít đường</p>
-                                    <p class="new-price"><b>12.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-1.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch ít đường</p>
+                                        <p class="new-price"><b>12.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-2.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch chocolate</p>
-                                    <p class="new-price"><b>11.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-2.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch chocolate</p>
+                                        <p class="new-price"><b>11.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-3.png" width="100%" />
-                                    <p class="product-name">
-                                        Milo bình thủy<br />
-                                        tinh
-                                    </p>
-                                    <p class="new-price"><b>22.999VND</b></p>
-                                    <p class="old-price">30.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-3.png" width="100%" />
+                                        <p class="product-name">Milo bình thủy tinh</p>
+                                        <p class="new-price"><b>22.999VND</b></p>
+                                        <p class="old-price">30.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-1.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch ít đường</p>
-                                    <p class="new-price"><b>12.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-1.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch ít đường</p>
+                                        <p class="new-price"><b>12.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-2.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch chocolate</p>
-                                    <p class="new-price"><b>11.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-2.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch chocolate</p>
+                                        <p class="new-price"><b>11.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-3.png" width="100%" />
-                                    <p class="product-name">
-                                        Milo bình thủy<br />
-                                        tinh
-                                    </p>
-                                    <p class="new-price"><b>22.999VND</b></p>
-                                    <p class="old-price">30.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-3.png" width="100%" />
+                                        <p class="product-name">Milo bình thủy tinh</p>
+                                        <p class="new-price"><b>22.999VND</b></p>
+                                        <p class="old-price">30.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-1.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch ít đường</p>
-                                    <p class="new-price"><b>12.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-1.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch ít đường</p>
+                                        <p class="new-price"><b>12.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-2.png" width="100%" />
-                                    <p class="product-name">Milo lúa mạch chocolate</p>
-                                    <p class="new-price"><b>11.999VND</b></p>
-                                    <p class="old-price">20.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-2.png" width="100%" />
+                                        <p class="product-name">Milo lúa mạch chocolate</p>
+                                        <p class="new-price"><b>11.999VND</b></p>
+                                        <p class="old-price">20.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-12">
-                                <div class="images">
-                                    <img src="images/saleproducts/product-3.png" width="100%" />
-                                    <p class="product-name">
-                                        Milo bình thủy<br />
-                                        tinh
-                                    </p>
-                                    <p class="new-price"><b>22.999VND</b></p>
-                                    <p class="old-price">30.000VND</p>
-                                </div>
+                                <a href="detail.html" class="link-style-none">
+                                    <div class="images">
+                                        <img src="images/saleproducts/product-3.png" width="100%" />
+                                        <p class="product-name">Milo bình thủy tinh</p>
+                                        <p class="new-price"><b>22.999VND</b></p>
+                                        <p class="old-price">30.000VND</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -738,14 +878,14 @@
                                 <li><a href="index.html">Trang chủ</a></li>
                                 <li><a href="category.html#sale">Sản phẩm bán chạy</a></li>
                                 <li><a href="category.html#hot">Sản phẩm đang hot</a></li>
-                                <li><a href="#">Quỹ từ thiện</a></li>
+                                <li><a href="charity.html">Quỹ từ thiện</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-6 bottom-right-nav">
                             <ul>
                                 <li><a href="about.html">Về chúng tôi</a></li>
                                 <li><a href="contact.html">Liên hệ</a></li>
-                                <li><a href="#">Đánh giá</a></li>
+                                <li><a href="contact.html">Đánh giá</a></li>
                                 <li><a href="privacy.html">Chính sách bảo mật</a></li>
                             </ul>
                         </div>

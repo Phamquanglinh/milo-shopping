@@ -9,6 +9,11 @@
     border-radius: 25px;
     padding: 20px;
     background: radial-gradient(#50e356, transparent);
+    transition: 0.6s;
+}
+.re-option:hover {
+    zoom: 1.4;
+    transition: 0.6s;
 }
 .row{
     margin: 10px 0!important;
@@ -17,6 +22,7 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: 23px;
 }
 .re-icon img {
     border-radius: 12px;
@@ -75,7 +81,6 @@
 .count-search{
     color: dimgrey;
 }
-.hot-image{}
 .hot-content{
     padding: 10px;
     text-align: center;
@@ -105,8 +110,9 @@
     text-align: center;
 }
 .review .review-content{
+    box-shadow: -2px 6px 6px 3px #00000085;
     padding: 17px 45px;
-    font-size: 200%;
+    font-size: 3vw;
     align-items: center;
     display: flex;
     color: white;
@@ -116,6 +122,7 @@
 .review .review-area{
     margin: 40px 0;
     transition: 0.3s;
+    padding-top: 60px;
 }
 .radius-left{
     border-radius: 100px 0 0 100px;

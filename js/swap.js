@@ -1,11 +1,13 @@
 function swapProduct(typeProduct){
-    console.log(typeProduct);
-    if(typeProduct == "#hot"){
+    if(typeProduct.charAt(0)=="#"){
+        typeProduct=typeProduct.substr(1);
+    }
+    if(typeProduct == "hot"){
         document.getElementById("hot").style.display="block";
         document.getElementById("sale").style.display="none";
         document.getElementById("all").style.display="none";
     }else{
-        if(typeProduct == "#sale"){
+        if(typeProduct == "sale"){
             document.getElementById("sale").style.display="block";
             document.getElementById("hot").style.display="none";
             document.getElementById("all").style.display="none";
