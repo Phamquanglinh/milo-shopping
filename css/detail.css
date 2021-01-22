@@ -1,4 +1,4 @@
-h3 {
+.extra h3 {
     text-decoration-line: line-through;
 }
 .main {
@@ -44,7 +44,7 @@ h3 {
     margin-top: 2%;
     background-color: #929E47;
 }
-h4 {
+.extra h4 {
     font-size: 200%;
 }
 

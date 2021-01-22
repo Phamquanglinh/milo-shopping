@@ -138,7 +138,7 @@
         padding-bottom: 40px;
     }
 }
-header{
+.container-fluid header{
     animation: fade-in 0.5s;
 }
 .row{

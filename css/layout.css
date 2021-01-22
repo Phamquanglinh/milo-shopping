@@ -13,7 +13,7 @@
     box-shadow: 1px 1px 19px #0e0e0ed1;
 }
 /*footer*/
-footer{
+.container-fluid footer{
     padding: 30px;
     background: #0b8441;
     color: white;
