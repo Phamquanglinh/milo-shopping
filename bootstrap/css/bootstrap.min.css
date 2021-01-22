@@ -4143,6 +4143,14 @@ tbody.collapse.show {
 .alert-heading {
     color: inherit;
 }
+.link-style-none{
+    color: initial;
+}
+.link-style-none:hover{
+    color: initial;
+    text-decoration: none;
+    font-weight: bold;
+}
 .alert-link {
     font-weight: 700;
 }
